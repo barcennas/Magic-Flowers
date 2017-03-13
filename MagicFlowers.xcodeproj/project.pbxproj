@@ -19,6 +19,10 @@
 		8E3E7B471E74B289005FD5C0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B461E74B289005FD5C0 /* DataService.swift */; };
 		8E3E7B501E74B6BC005FD5C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B4F1E74B6BC005FD5C0 /* Constants.swift */; };
 		8E3E7B521E74B82B005FD5C0 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3E7B511E74B82B005FD5C0 /* SwiftKeychainWrapper.framework */; };
+		8E8908701E75D04C007F61DB /* ColorNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89086F1E75D04C007F61DB /* ColorNavBar.swift */; };
+		8E8908721E75D7DA007F61DB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8908711E75D7DA007F61DB /* HomeController.swift */; };
+		8E8908781E75E58F007F61DB /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8908771E75E58F007F61DB /* HomeCell.swift */; };
+		8E89087A1E762737007F61DB /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8908791E762737007F61DB /* Categoria.swift */; };
 		A8BCFB88054C2FDDAB5614B3 /* Pods_MagicFlowers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D470EDE8141AE783B3680BE2 /* Pods_MagicFlowers.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,10 @@
 		8E3E7B461E74B289005FD5C0 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8E3E7B4F1E74B6BC005FD5C0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E3E7B511E74B82B005FD5C0 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = "Pods/../build/Release-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"; sourceTree = "<group>"; };
+		8E89086F1E75D04C007F61DB /* ColorNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorNavBar.swift; sourceTree = "<group>"; };
+		8E8908711E75D7DA007F61DB /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		8E8908771E75E58F007F61DB /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		8E8908791E762737007F61DB /* Categoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 		D470EDE8141AE783B3680BE2 /* Pods_MagicFlowers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicFlowers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB43BC0769E2B1AF99B7F5B /* Pods-MagicFlowers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicFlowers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicFlowers/Pods-MagicFlowers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +123,7 @@
 		8E3E7B3A1E74A4B3005FD5C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E8908791E762737007F61DB /* Categoria.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -124,6 +133,7 @@
 			children = (
 				8E3E7B3D1E74A9ED005FD5C0 /* RoundButton.swift */,
 				8E3E7B3F1E74ABBF005FD5C0 /* RoundView.swift */,
+				8E89086F1E75D04C007F61DB /* ColorNavBar.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -131,8 +141,10 @@
 		8E3E7B3C1E74A4BC005FD5C0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8E3E7B291E74A469005FD5C0 /* LoginController.swift */,
-				8E3E7B411E74AFD7005FD5C0 /* RegisterController.swift */,
+				8E8908761E75E570007F61DB /* Login */,
+				8E8908731E75E535007F61DB /* Home */,
+				8E8908741E75E53A007F61DB /* Favoritos */,
+				8E8908751E75E559007F61DB /* Usuario */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -143,6 +155,38 @@
 				8E3E7B461E74B289005FD5C0 /* DataService.swift */,
 			);
 			name = Database;
+			sourceTree = "<group>";
+		};
+		8E8908731E75E535007F61DB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E8908711E75D7DA007F61DB /* HomeController.swift */,
+				8E8908771E75E58F007F61DB /* HomeCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		8E8908741E75E53A007F61DB /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Favoritos;
+			sourceTree = "<group>";
+		};
+		8E8908751E75E559007F61DB /* Usuario */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Usuario;
+			sourceTree = "<group>";
+		};
+		8E8908761E75E570007F61DB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E7B411E74AFD7005FD5C0 /* RegisterController.swift */,
+				8E3E7B291E74A469005FD5C0 /* LoginController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		9D1DC59FA889CC1CD7DB95A0 /* Pods */ = {
@@ -290,10 +334,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3E7B421E74AFD7005FD5C0 /* RegisterController.swift in Sources */,
+				8E89087A1E762737007F61DB /* Categoria.swift in Sources */,
 				8E3E7B3E1E74A9ED005FD5C0 /* RoundButton.swift in Sources */,
 				8E3E7B401E74ABBF005FD5C0 /* RoundView.swift in Sources */,
 				8E3E7B471E74B289005FD5C0 /* DataService.swift in Sources */,
+				8E8908781E75E58F007F61DB /* HomeCell.swift in Sources */,
 				8E3E7B501E74B6BC005FD5C0 /* Constants.swift in Sources */,
+				8E8908721E75D7DA007F61DB /* HomeController.swift in Sources */,
+				8E8908701E75D04C007F61DB /* ColorNavBar.swift in Sources */,
 				8E3E7B2A1E74A469005FD5C0 /* LoginController.swift in Sources */,
 				8E3E7B281E74A469005FD5C0 /* AppDelegate.swift in Sources */,
 			);

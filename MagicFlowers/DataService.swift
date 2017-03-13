@@ -19,10 +19,15 @@ class DataService {
     static let ds = DataService()
     
     private var _REF_USERS = DB_BASE.child("users")
+    private var _REF_CATEGORIES = DB_BASE.child("categories")
     private var _REF_ITEMS_IMAGES = STORAGE_BASE.child("item-images")
     
     var REF_USERS : FIRDatabaseReference {
         return _REF_USERS
+    }
+    
+    var REF_CATEGORIES : FIRDatabaseReference {
+        return _REF_CATEGORIES
     }
     
     var REF_ITEM_IMAGES : FIRStorageReference {
