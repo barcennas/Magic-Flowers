@@ -1,5 +1,5 @@
 //
-//  HomeController.swift
+//  CategoriaController.swift
 //  MagicFlowers
 //
 //  Created by Abraham Barcenas M on 3/12/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeController: UITableViewController {
+class CategoriaController: UITableViewController {
     
     var categorias : [Categoria] = []
 
@@ -19,9 +19,7 @@ class HomeController: UITableViewController {
             self.categorias = []
             if let categoriesDict = snapshot.value as? [String : Any] {
                 for cat in categoriesDict{
-                    print(cat.key)
                     if let catDict = cat.value as? [String : Any]{
-                        print(catDict)
                         if let products = catDict["products"] as? [String : Any]{
                             if let isEnabled = catDict["isEnabled"] as? Bool {
                                 if isEnabled{
@@ -44,8 +42,9 @@ class HomeController: UITableViewController {
     // MARK: - Table view Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let categoria = categorias[indexPath.row]
-        
+        let categoria = categorias[indexPath.row]
+        let productsIds = categoria.productos
+        performSegue(withIdentifier: "categorieToProduct", sender: productsIds)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,11 +59,21 @@ class HomeController: UITableViewController {
         
         let categoria = categorias[indexPath.row]
         
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as? HomeCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriaCell", for: indexPath) as? CategoriaCell {
             cell.configureCell(categoria: categoria)
             return cell
         }
         return UITableViewCell()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "categorieToProduct" {
+            if let destinoVC = segue.destination as? ProductoController {
+                if let productIds = sender as? [String]{
+                    destinoVC.productId = productIds
+                }
+            }
+        }
     }
 
 }

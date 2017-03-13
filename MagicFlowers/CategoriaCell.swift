@@ -1,5 +1,5 @@
 //
-//  HomeCell.swift
+//  CategoriaCell.swift
 //  MagicFlowers
 //
 //  Created by Abraham Barcenas M on 3/12/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeCell: UITableViewCell {
+class CategoriaCell: UITableViewCell {
 
     
     @IBOutlet weak var lblNombre: UILabel!

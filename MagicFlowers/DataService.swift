@@ -20,6 +20,7 @@ class DataService {
     
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_CATEGORIES = DB_BASE.child("categories")
+    private var _REF_PRODUCTOS = DB_BASE.child("products")
     private var _REF_ITEMS_IMAGES = STORAGE_BASE.child("item-images")
     
     var REF_USERS : FIRDatabaseReference {
@@ -28,6 +29,10 @@ class DataService {
     
     var REF_CATEGORIES : FIRDatabaseReference {
         return _REF_CATEGORIES
+    }
+    
+    var REF_PRODUCTOS : FIRDatabaseReference {
+        return _REF_PRODUCTOS
     }
     
     var REF_ITEM_IMAGES : FIRStorageReference {
