@@ -41,6 +41,7 @@ class RegisterController: UIViewController {
     
     
 }
+
 extension RegisterController : UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
         if textField == txtUsuario, let username = textField.text, username.rangeOfCharacter(from: WHITESPACE) == nil, !username.isEmpty{

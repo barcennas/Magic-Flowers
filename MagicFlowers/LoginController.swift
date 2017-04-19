@@ -27,9 +27,9 @@ class LoginController: UIViewController {
             DataService.ds.REF_USERS.child(user).observeSingleEvent(of: .value, with: { (snapshot) in
                 if snapshot.hasChild("password"){
                     if let userDict = snapshot.value as? [String : Any]{
-                        print(userDict)
                         if let pass = userDict["password"] as? String{
                             if pass == password{
+                                UserDefaults.standard.set(user, forKey: KEY_USERNAME)
                                 self.performSegue(withIdentifier: "loginToMain", sender: nil)
                             }else{
                                 self.alertMessage(title: "Contraseña incorrecta", message: "La contraseña para el usuario ingresado es incorrecta")

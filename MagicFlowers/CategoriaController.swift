@@ -38,13 +38,22 @@ class CategoriaController: UITableViewController {
         })
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Tipos de Arreglos"
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = " "
+    }
 
     // MARK: - Table view Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let categoria = categorias[indexPath.row]
-        let productsIds = categoria.productos
-        performSegue(withIdentifier: "categorieToProduct", sender: productsIds)
+        performSegue(withIdentifier: "categorieToProduct", sender: categoria)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -69,7 +78,10 @@ class CategoriaController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "categorieToProduct" {
             if let destinoVC = segue.destination as? ProductoController {
-                if let productIds = sender as? [String]{
+                if let categoria = sender as? Categoria{
+                    let nombre = categoria.nombre
+                    let productIds = categoria.productos
+                    destinoVC.nombreCategoria = nombre
                     destinoVC.productId = productIds
                 }
             }

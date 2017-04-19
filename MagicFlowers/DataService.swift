@@ -48,8 +48,10 @@ class DataService {
         return FIRDatabaseReference()
     }*/
     
-    func createFirebaseDBUser(user: String, userData: [String : String]){
-        REF_USERS.child(user).updateChildValues(userData)
+    func createFirebaseDBUser(user: String, userData: [String : Any]){
+        var stardaCreationData = userData
+        stardaCreationData["productosFavoritos"] = ["Default": true]
+        REF_USERS.child(user).updateChildValues(stardaCreationData)
     }
     
     
