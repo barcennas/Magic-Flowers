@@ -21,6 +21,7 @@ class DataService {
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_CATEGORIES = DB_BASE.child("categories")
     private var _REF_PRODUCTOS = DB_BASE.child("products")
+    private var _REF_ORDERS = DB_BASE.child("orders")
     private var _REF_ITEMS_IMAGES = STORAGE_BASE.child("item-images")
     
     var REF_USERS : FIRDatabaseReference {
@@ -35,9 +36,14 @@ class DataService {
         return _REF_PRODUCTOS
     }
     
+    var REF_ORDERS : FIRDatabaseReference {
+        return _REF_ORDERS
+    }
+    
     var REF_ITEM_IMAGES : FIRStorageReference {
         return _REF_ITEMS_IMAGES
     }
+    
     
     /*var REF_USER_CURRENT : FIRDatabaseReference{
         if let username = KeychainWrapper.standard.string(forKey: KEY_USERNAME){
@@ -52,6 +58,13 @@ class DataService {
         var stardaCreationData = userData
         stardaCreationData["productosFavoritos"] = ["Default": true]
         REF_USERS.child(user).updateChildValues(stardaCreationData)
+    }
+    
+    func createNewOrder(user: String, orderData: [String : Any]){
+        let orderId = "\(Int(Date().timeIntervalSince1970))"
+        print(orderId)
+        REF_ORDERS.child(orderId).updateChildValues(orderData)
+        REF_USERS.child(user).child("orders").updateChildValues([orderId : true])
     }
     
     

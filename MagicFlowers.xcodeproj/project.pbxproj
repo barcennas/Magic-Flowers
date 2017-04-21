@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8E312A8C1EA29457004FA96C /* FavoritosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E312A8B1EA29457004FA96C /* FavoritosController.swift */; };
-		8E312A8E1EA708E5004FA96C /* OrderPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E312A8D1EA708E5004FA96C /* OrderPopupController.swift */; };
+		8E312A8E1EA708E5004FA96C /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E312A8D1EA708E5004FA96C /* OrderController.swift */; };
 		8E3E7B281E74A469005FD5C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B271E74A469005FD5C0 /* AppDelegate.swift */; };
 		8E3E7B2A1E74A469005FD5C0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B291E74A469005FD5C0 /* LoginController.swift */; };
 		8E3E7B2D1E74A469005FD5C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E7B2B1E74A469005FD5C0 /* Main.storyboard */; };
@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		7F649AE12539E4A5861C91A1 /* Pods-MagicFlowers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicFlowers.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicFlowers/Pods-MagicFlowers.release.xcconfig"; sourceTree = "<group>"; };
 		8E312A8B1EA29457004FA96C /* FavoritosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritosController.swift; sourceTree = "<group>"; };
-		8E312A8D1EA708E5004FA96C /* OrderPopupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderPopupController.swift; sourceTree = "<group>"; };
+		8E312A8D1EA708E5004FA96C /* OrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
 		8E3E7B241E74A469005FD5C0 /* MagicFlowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicFlowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3E7B271E74A469005FD5C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E3E7B291E74A469005FD5C0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				8E89087B1E764FC1007F61DB /* ProductoController.swift */,
 				8E89087D1E765118007F61DB /* ProductoCell.swift */,
 				8E8908811E777956007F61DB /* ProductoDetalleController.swift */,
-				8E312A8D1EA708E5004FA96C /* OrderPopupController.swift */,
+				8E312A8D1EA708E5004FA96C /* OrderController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -352,7 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3E7B421E74AFD7005FD5C0 /* RegisterController.swift in Sources */,
-				8E312A8E1EA708E5004FA96C /* OrderPopupController.swift in Sources */,
+				8E312A8E1EA708E5004FA96C /* OrderController.swift in Sources */,
 				8E89087A1E762737007F61DB /* Categoria.swift in Sources */,
 				8E3E7B3E1E74A9ED005FD5C0 /* RoundButton.swift in Sources */,
 				8E3E7B401E74ABBF005FD5C0 /* RoundView.swift in Sources */,

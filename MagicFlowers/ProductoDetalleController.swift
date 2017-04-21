@@ -77,5 +77,16 @@ class ProductoDetalleController: UIViewController {
         bottomView.addSubview(scrollView)
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "confirmOrder"{
+            if let orderVC = segue.destination as? OrderController {
+                orderVC.id = self.id
+                orderVC.imagen = self.imagen
+                orderVC.nombre = self.nombre
+                orderVC.precio = self.precio
+            }
+        }
+    }
 
 }
