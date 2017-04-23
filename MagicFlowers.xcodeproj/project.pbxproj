@@ -17,7 +17,6 @@
 		8E3E7B3E1E74A9ED005FD5C0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B3D1E74A9ED005FD5C0 /* RoundButton.swift */; };
 		8E3E7B401E74ABBF005FD5C0 /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B3F1E74ABBF005FD5C0 /* RoundView.swift */; };
 		8E3E7B421E74AFD7005FD5C0 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B411E74AFD7005FD5C0 /* RegisterController.swift */; };
-		8E3E7B441E74B125005FD5C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E3E7B431E74B125005FD5C0 /* GoogleService-Info.plist */; };
 		8E3E7B471E74B289005FD5C0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B461E74B289005FD5C0 /* DataService.swift */; };
 		8E3E7B501E74B6BC005FD5C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E7B4F1E74B6BC005FD5C0 /* Constants.swift */; };
 		8E3E7B521E74B82B005FD5C0 /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3E7B511E74B82B005FD5C0 /* SwiftKeychainWrapper.framework */; };
@@ -29,6 +28,7 @@
 		8E89087E1E765118007F61DB /* ProductoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89087D1E765118007F61DB /* ProductoCell.swift */; };
 		8E8908801E7651AB007F61DB /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89087F1E7651AB007F61DB /* Producto.swift */; };
 		8E8908821E777956007F61DB /* ProductoDetalleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8908811E777956007F61DB /* ProductoDetalleController.swift */; };
+		8EA5804E1EAD622700472EC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5804D1EAD622700472EC1 /* GoogleService-Info.plist */; };
 		A8BCFB88054C2FDDAB5614B3 /* Pods_MagicFlowers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D470EDE8141AE783B3680BE2 /* Pods_MagicFlowers.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +59,6 @@
 		8E3E7B3D1E74A9ED005FD5C0 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8E3E7B3F1E74ABBF005FD5C0 /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		8E3E7B411E74AFD7005FD5C0 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
-		8E3E7B431E74B125005FD5C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E3E7B461E74B289005FD5C0 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8E3E7B4F1E74B6BC005FD5C0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E3E7B511E74B82B005FD5C0 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftKeychainWrapper.framework; path = "Pods/../build/Release-iphoneos/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		8E89087D1E765118007F61DB /* ProductoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductoCell.swift; sourceTree = "<group>"; };
 		8E89087F1E7651AB007F61DB /* Producto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
 		8E8908811E777956007F61DB /* ProductoDetalleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductoDetalleController.swift; sourceTree = "<group>"; };
+		8EA5804D1EAD622700472EC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D470EDE8141AE783B3680BE2 /* Pods_MagicFlowers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicFlowers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB43BC0769E2B1AF99B7F5B /* Pods-MagicFlowers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicFlowers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicFlowers/Pods-MagicFlowers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,8 +125,8 @@
 		8E3E7B391E74A4AE005FD5C0 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				8EA5804D1EAD622700472EC1 /* GoogleService-Info.plist */,
 				8E3E7B4F1E74B6BC005FD5C0 /* Constants.swift */,
-				8E3E7B431E74B125005FD5C0 /* GoogleService-Info.plist */,
 				8E3E7B331E74A469005FD5C0 /* Info.plist */,
 			);
 			name = Util;
@@ -290,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3E7B321E74A469005FD5C0 /* LaunchScreen.storyboard in Resources */,
-				8E3E7B441E74B125005FD5C0 /* GoogleService-Info.plist in Resources */,
+				8EA5804E1EAD622700472EC1 /* GoogleService-Info.plist in Resources */,
 				8E3E7B2F1E74A469005FD5C0 /* Assets.xcassets in Resources */,
 				8E3E7B2D1E74A469005FD5C0 /* Main.storyboard in Resources */,
 			);
