@@ -29,6 +29,8 @@
 		8E8908801E7651AB007F61DB /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E89087F1E7651AB007F61DB /* Producto.swift */; };
 		8E8908821E777956007F61DB /* ProductoDetalleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8908811E777956007F61DB /* ProductoDetalleController.swift */; };
 		8EA5804E1EAD622700472EC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA5804D1EAD622700472EC1 /* GoogleService-Info.plist */; };
+		8EB087741EC52F8E00D7D225 /* HistorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB087731EC52F8E00D7D225 /* HistorialController.swift */; };
+		8EB087761EC536E200D7D225 /* HistorialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB087751EC536E200D7D225 /* HistorialCell.swift */; };
 		A8BCFB88054C2FDDAB5614B3 /* Pods_MagicFlowers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D470EDE8141AE783B3680BE2 /* Pods_MagicFlowers.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		8E89087F1E7651AB007F61DB /* Producto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
 		8E8908811E777956007F61DB /* ProductoDetalleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductoDetalleController.swift; sourceTree = "<group>"; };
 		8EA5804D1EAD622700472EC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8EB087731EC52F8E00D7D225 /* HistorialController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialController.swift; sourceTree = "<group>"; };
+		8EB087751EC536E200D7D225 /* HistorialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialCell.swift; sourceTree = "<group>"; };
 		D470EDE8141AE783B3680BE2 /* Pods_MagicFlowers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicFlowers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB43BC0769E2B1AF99B7F5B /* Pods-MagicFlowers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicFlowers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicFlowers/Pods-MagicFlowers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,8 +129,8 @@
 		8E3E7B391E74A4AE005FD5C0 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				8EA5804D1EAD622700472EC1 /* GoogleService-Info.plist */,
 				8E3E7B4F1E74B6BC005FD5C0 /* Constants.swift */,
+				8EA5804D1EAD622700472EC1 /* GoogleService-Info.plist */,
 				8E3E7B331E74A469005FD5C0 /* Info.plist */,
 			);
 			name = Util;
@@ -157,6 +161,7 @@
 				8E8908761E75E570007F61DB /* Login */,
 				8E8908731E75E535007F61DB /* Home */,
 				8E8908741E75E53A007F61DB /* Favoritos */,
+				8EB087721EC52F6A00D7D225 /* Historial */,
 				8E8908751E75E559007F61DB /* Usuario */,
 			);
 			name = Controller;
@@ -205,6 +210,15 @@
 				8E3E7B291E74A469005FD5C0 /* LoginController.swift */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		8EB087721EC52F6A00D7D225 /* Historial */ = {
+			isa = PBXGroup;
+			children = (
+				8EB087731EC52F8E00D7D225 /* HistorialController.swift */,
+				8EB087751EC536E200D7D225 /* HistorialCell.swift */,
+			);
+			name = Historial;
 			sourceTree = "<group>";
 		};
 		9D1DC59FA889CC1CD7DB95A0 /* Pods */ = {
@@ -351,7 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB087761EC536E200D7D225 /* HistorialCell.swift in Sources */,
 				8E3E7B421E74AFD7005FD5C0 /* RegisterController.swift in Sources */,
+				8EB087741EC52F8E00D7D225 /* HistorialController.swift in Sources */,
 				8E312A8E1EA708E5004FA96C /* OrderController.swift in Sources */,
 				8E89087A1E762737007F61DB /* Categoria.swift in Sources */,
 				8E3E7B3E1E74A9ED005FD5C0 /* RoundButton.swift in Sources */,

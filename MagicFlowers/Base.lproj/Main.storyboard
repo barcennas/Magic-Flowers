@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="137" y="627"/>
         </scene>
         <!--Arreglos Favoritos-->
         <scene sceneID="bvS-AY-BrN">
@@ -383,17 +383,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gwe-FX-4XK">
-                                <rect key="frame" x="0.0" y="64" width="375" height="320"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="PXR-pe-zr6"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nq3-fE-k47">
-                                <rect key="frame" x="0.0" y="384" width="375" height="186"/>
+                                <rect key="frame" x="0.0" y="340" width="375" height="279"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lr4-J2-dDM" customClass="RoundButton" customModule="MagicFlowers" customModuleProvider="target">
-                                <rect key="frame" x="56" y="578" width="263" height="30"/>
+                                <rect key="frame" x="56" y="627" width="263" height="30"/>
                                 <color key="backgroundColor" red="0.19115509089999999" green="0.63786703349999996" blue="0.26147949700000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DbJ-NR-32P"/>
@@ -720,12 +720,13 @@
                     <connections>
                         <segue destination="93O-dW-Pfb" kind="relationship" relationship="viewControllers" id="cp6-LG-g2y"/>
                         <segue destination="O6U-CD-Ejw" kind="relationship" relationship="viewControllers" id="kbb-mK-0IV"/>
+                        <segue destination="LJT-Fz-KN4" kind="relationship" relationship="viewControllers" id="vQz-kb-gM0"/>
                         <segue destination="61A-j3-303" kind="relationship" relationship="viewControllers" id="1YP-kc-saK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pcr-NK-Tah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="139"/>
+            <point key="canvasLocation" x="980" y="836"/>
         </scene>
         <!--Register Controller-->
         <scene sceneID="m7s-zg-70j">
@@ -876,7 +877,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJK-JH-5hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="834.33283358320841"/>
+            <point key="canvasLocation" x="137" y="1424"/>
         </scene>
         <!--Home-->
         <scene sceneID="jPE-M2-aV2">
@@ -916,6 +917,80 @@
             </objects>
             <point key="canvasLocation" x="1948" y="1179"/>
         </scene>
+        <!--Historial de Compras-->
+        <scene sceneID="irx-Xx-yVr">
+            <objects>
+                <tableViewController id="a8C-Ue-gRD" customClass="HistorialController" customModule="MagicFlowers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" id="9xg-XR-yXb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistorialCell" rowHeight="81" id="TuK-cf-FMX" customClass="HistorialCell" customModule="MagicFlowers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TuK-cf-FMX" id="s7s-1V-CYU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qZQ-9h-BQT">
+                                            <rect key="frame" x="0.0" y="0.5" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="lor-Ol-agy"/>
+                                                <constraint firstAttribute="width" constant="80" id="oAv-UK-5Em"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xRZ-Eb-fOA">
+                                            <rect key="frame" x="88" y="4.5" width="279" height="71.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYh-OD-jMQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="279" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGi-Cu-0KT">
+                                                    <rect key="frame" x="0.0" y="25.5" width="279" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PO8-ZU-01g">
+                                                    <rect key="frame" x="0.0" y="51" width="279" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qZQ-9h-BQT" firstAttribute="leading" secondItem="s7s-1V-CYU" secondAttribute="leading" id="15n-IR-x9T"/>
+                                        <constraint firstItem="qZQ-9h-BQT" firstAttribute="centerY" secondItem="s7s-1V-CYU" secondAttribute="centerY" id="HAH-1h-AyQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="xRZ-Eb-fOA" secondAttribute="trailing" constant="8" id="Lxb-ZD-Yd0"/>
+                                        <constraint firstItem="xRZ-Eb-fOA" firstAttribute="centerY" secondItem="s7s-1V-CYU" secondAttribute="centerY" id="bOl-lY-cpq"/>
+                                        <constraint firstItem="xRZ-Eb-fOA" firstAttribute="leading" secondItem="qZQ-9h-BQT" secondAttribute="trailing" constant="8" id="hDb-mE-iyW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblFecha" destination="AGi-Cu-0KT" id="M3r-KC-PSk"/>
+                                    <outlet property="lblName" destination="yYh-OD-jMQ" id="tpW-UB-3T4"/>
+                                    <outlet property="lblTotal" destination="PO8-ZU-01g" id="jxa-BU-jTX"/>
+                                    <outlet property="productImage" destination="qZQ-9h-BQT" id="x7A-03-UGg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="a8C-Ue-gRD" id="Y7c-Ae-jnP"/>
+                            <outlet property="delegate" destination="a8C-Ue-gRD" id="hwR-bR-bvv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Historial de Compras" id="d11-8c-ATj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSy-eY-Dao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2885.5999999999999" y="1927.2863568215894"/>
+        </scene>
         <!--Favoritos-->
         <scene sceneID="i3c-zY-1ru">
             <objects>
@@ -935,17 +1010,37 @@
             </objects>
             <point key="canvasLocation" x="1948" y="477"/>
         </scene>
+        <!--Historial-->
+        <scene sceneID="HQ6-Hh-EAP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJT-Fz-KN4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Historial" image="history" id="0HV-DE-dpe"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="M8Z-8y-GgK" customClass="ColorNavBar" customModule="MagicFlowers" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a8C-Ue-gRD" kind="relationship" relationship="rootViewController" id="1VI-4f-Phq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iaJ-dx-VYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="1928"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bgFlowers" width="1024" height="768"/>
         <image name="heartFilled" width="32" height="32"/>
+        <image name="history" width="32" height="32"/>
         <image name="ramoFull" width="32" height="32"/>
         <image name="rose" width="128" height="128"/>
         <image name="user" width="96" height="96"/>
         <image name="userInfo" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="li9-3d-ZYZ"/>
         <segue reference="uuC-EX-wfM"/>
+        <segue reference="li9-3d-ZYZ"/>
     </inferredMetricsTieBreakers>
 </document>

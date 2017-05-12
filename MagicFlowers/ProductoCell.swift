@@ -31,7 +31,7 @@ class ProductoCell: UITableViewCell {
             let ref = FIRStorage.storage().reference(forURL: producto.imagenURL)
             ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
                 if error != nil {
-                    print(error?.localizedDescription)
+                    print(error!.localizedDescription)
                 }else{
                     if let imageData = data{
                         if let image = UIImage(data: imageData){
